@@ -1,0 +1,60 @@
+body {
+    margin: 5px;
+    border: 2px solid white; 
+    background-color: #F0F0F0; 
+    width: auto;
+    height: auto;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    padding: 5px;
+    height: 95vh;
+    text-align: center; 
+    box-sizing: border-box;
+}
+
+h2 {
+    padding-bottom: 0px;
+    margin-left: 20px;
+}
+
+.block {
+    width: 50%;
+    height: 44%;
+    display: inline-block;
+    margin: -4px; 
+    border: 2px solid white; 
+    box-sizing: border-box;
+    padding-left: 0px;
+    text-align: left;
+    vertical-align: top; /* Додано для вирівнювання блоків по вертикалі */
+}
+
+li:nth-child(odd) {
+    color: red;
+}
+
+li:nth-child(even) {
+    color: blue;
+}
+
+li {
+    list-style-type: none; 
+    margin-left: 55px;
+}
+
+li::before {
+    content: "- "; 
+}
+
+.circle {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 100%; 
+    }
+}
